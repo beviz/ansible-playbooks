@@ -1,0 +1,7 @@
+- name: install docker
+  shell: "curl -fsSL https://get.docker.com/ | sh"
+  args:
+    creates: /usr/bin/docker
+
+- name: start docker
+  service: name=docker state=running

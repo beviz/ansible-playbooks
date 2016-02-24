@@ -1,0 +1,5 @@
+- include: docker.yml
+- include: docker-compose.yml
+- include: docker-volumes.yml
+
+- copy: src=docker-container.logrotate dest=/etc/logrotate.d/docker-container
