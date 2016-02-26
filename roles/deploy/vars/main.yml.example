@@ -1,0 +1,3 @@
+# example: https://github.com/beviz/docker-compose-rails
+local_docker_config_dir: /workspace/docker-compose-rails/
+remote_work_dir: /var/www

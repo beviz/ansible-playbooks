@@ -1,0 +1,3 @@
+env:
+  http_proxy: http://example.com:23218
+  https_proxy: http://example.com:23218

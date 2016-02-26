@@ -1,1 +1,4 @@
 hosts
+vars.yml
+roles/deploy/vars/main.yml
+roles/docker/vars/main.yml

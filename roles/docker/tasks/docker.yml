@@ -1,7 +1,18 @@
-- name: install docker
+- name: install docker by yum
   shell: "curl -fsSL https://get.docker.com/ | sh"
   args:
     creates: /usr/bin/docker
 
 - name: start docker
   service: name=docker state=running
+
+
+# - name: install docker from binaries
+#   shell: cd /usr/bin && curl -L https://get.docker.com/builds/Linux/x86_64/docker-latest -o docker
+#   args:
+#     creates: /usr/bin/docker
+
+# - file: path=/usr/bin/docker mode="a+x"
+#   command: mv
+# - name: start docker
+#   command: docker daemon &
