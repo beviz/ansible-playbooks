@@ -1,0 +1,14 @@
+---
+
+- hosts: test_server
+  roles:
+    - common
+    - docker
+
+  vars_files:
+    - vars.yml
+
+  vars:
+    docker_compose_version: "1.23.2"
+    git_version: "2.20.1"
+    git_install_from_source_force_update: true

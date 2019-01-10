@@ -1,6 +1,0 @@
-- name: install docker-compose
-  shell: " curl -s -L https://github.com/docker/compose/releases/download/{{docker_compose_version}}/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose"
-  args:
-    creates: /usr/local/bin/docker-compose
-
-- file: path=/usr/local/bin/docker-compose mode="a+x"

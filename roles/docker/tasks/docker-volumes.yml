@@ -1,6 +1,0 @@
-- name: install docker-volumes
-  shell: "curl -s -L https://github.com/cpuguy83/docker-volumes/releases/download/v1.{{docker_volumes_version}}/docker-volumes-`uname -s | tr '[:upper:]' '[:lower:]'`-`dpkg --print-architecture` > /usr/local/bin/docker-volumes"
-  args:
-    creates: /usr/local/bin/docker-volumes
-
-- file: path=/usr/local/bin/docker-volumes mode="a+x"

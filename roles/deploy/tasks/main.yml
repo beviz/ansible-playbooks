@@ -1,7 +1,0 @@
-- synchronize: src={{ local_docker_config_dir }} dest={{ remote_work_dir }}/docker/ compress=true
-- name: build docker-compose
-  command: chdir={{ remote_work_dir }}/docker/ docker-compose build
-- name: stop docker-compose
-  command: chdir={{ remote_work_dir }}/docker/ docker-compose stop
-- name: start docker-compose up
-  command: chdir={{ remote_work_dir }}/docker/ docker-compose up -d

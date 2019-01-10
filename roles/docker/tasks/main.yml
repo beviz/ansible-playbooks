@@ -1,5 +1,7 @@
-- include: docker.yml
-- include: docker-compose.yml
-- include: docker-volumes.yml
+# - include: docker.yml
+# - include: docker-compose.yml
 
-- copy: src=docker-container.logrotate dest=/etc/logrotate.d/docker-container
+- import_role:
+    name: geerlingguy.docker
+- name: Copy docker-container.logrotate
+  copy: src=docker-container.logrotate dest=/etc/logrotate.d/docker-container

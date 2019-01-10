@@ -1,0 +1,6 @@
+- name: 'Clone bsc'
+  git:
+    repo: https://github.com/beviz/bsc.git
+    dest: ~/.bsc
+- name: 'Install bsc'
+  shell: FORCE=true ~/.bsc/install.sh
