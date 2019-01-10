@@ -1,0 +1,12 @@
+- import_role:
+    name: telusdigital.fish
+
+- name: Create fish config directory
+  file: path=~/.config/fish state=directory
+
+- name: Copy config.fish
+  copy: src=config.fish dest=~/.config/fish/config.fish
+
+- name: Change default shell to fish(if required)
+  command: "chsh -s /usr/bin/fish"
+  when: set_fish_as_default

@@ -1,2 +1,3 @@
-- src: geerlingguy.docker
-- src: geerlingguy.git
+- include: roles/common/requirements.yml
+- include: roles/docker/requirements.yml
+- include: roles/fish/requirements.yml
